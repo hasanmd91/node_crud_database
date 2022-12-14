@@ -16,9 +16,9 @@
 
 ## Screenshot
 
-<img src="assets\Flowers.png "/>
+<img src="assets\Flowers (1).png" />
 <br/>
-<img src="assets\Add-flower.png" />
+<img src="assets\Add-flower (1).png" />
 
 ## Sources
 
