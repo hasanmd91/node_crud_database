@@ -1,6 +1,6 @@
 :root {
   --primary-color: #86c232;
-  --secondary-color: #989898;
+  --secondary-color: #f7eded;
 }
 
 body {
@@ -82,6 +82,10 @@ button {
   margin: 5px;
 }
 
+button:hover {
+  background-color: var(--secondary-color);
+}
+
 p.error {
   border: dashed orangered 2px;
   padding: 1em;
@@ -113,4 +117,8 @@ input {
   width: 200px;
   border-radius: 5px;
   border: none;
+}
+
+h1 {
+  color: var(--primary-color);
 }

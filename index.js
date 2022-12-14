@@ -21,12 +21,6 @@ const menuPath = path.join(__dirname, "menu.html");
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "pages"));
 
-// rendering home page
-// app.get("/", (req, res) => {
-//   res.sendFile(menuPath);
-// });
-
-// rendering all flower page
 app.get("/", (req, res) => {
   flowerStorage
     .getAll()
