@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const router = express.Router();
 
 const { port, host } = require("./serverConfig.json");
 
@@ -21,12 +22,12 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "pages"));
 
 // rendering home page
-app.get("/", (req, res) => {
-  res.sendFile(menuPath);
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(menuPath);
+// });
 
 // rendering all flower page
-app.get("/all", (req, res) => {
+app.get("/", (req, res) => {
   flowerStorage
     .getAll()
     .then((data) => res.render("allFlower", { result: data }));

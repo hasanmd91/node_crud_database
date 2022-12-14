@@ -1,6 +1,13 @@
+:root {
+  --primary-color: #86c232;
+  --secondary-color: #989898;
+}
+
 body {
-  background-color: rgb(45, 43, 43);
-  color: white;
+  background-color: #222629;
+  color: var(--secondary-color);
+  padding: 0px;
+  margin: 0px;
 }
 
 main,
@@ -12,14 +19,31 @@ form {
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  height: 10vh;
 }
 
-.container > div {
+ul {
   display: flex;
-  gap: 10px;
+  gap: 35px;
+  justify-content: right;
+  margin-right: 50px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
+}
+
+ul li a:hover {
+  color: var(--primary-color);
 }
 
 input[readonly] {
@@ -34,24 +58,25 @@ table {
 table,
 th,
 td {
-  border: solid black 1px;
-  padding: 0.5rem 1rem;
+  border: solid 1px;
+  padding: 0.5rem 2rem;
   border-color: rgb(59, 56, 56);
 }
 
 thead {
-  background-color: rgb(233, 232, 223);
-  color: black;
+  background-color: #222426;
+  color: var(--secondary-color);
+  font-size: 20px;
 }
 
 button {
   font-family: sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   width: 13em;
   padding: 14px 10px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(202, 197, 197);
+  background-color: var(--primary-color);
   color: black;
   cursor: pointer;
   margin: 5px;
