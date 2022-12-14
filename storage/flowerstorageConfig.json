@@ -1,0 +1,5 @@
+{
+  "storageFile": "flowers.json",
+  "adapterFile": "adapter.js",
+  "key": "flowerId"
+}
