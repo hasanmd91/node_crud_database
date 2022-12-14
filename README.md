@@ -1,15 +1,13 @@
-# Speed Game
+# Flower Database
+
+- crud application
 
 ## Technologies used
 
-- React.js
-- javascript
-- Html
+- Node.js
+- Express.js
+- ejs
 - Css
-
-## Setup and usage
-
-Live page [here]()
 
 ## Screenshot
 
@@ -19,4 +17,4 @@ Live page [here]()
 
 ## Sources
 
-- [source code]()
+- [source code](https://github.com/hasanmd91/node_crud_database)
