@@ -43,7 +43,7 @@ app.post("/getflower", (req, res) => {
   flowerStorage
     .getOne(req.body.id)
     .then((flower) => res.render("flowerPage", { result: flower }))
-    .catch((error) => console.log(error));
+    .catch((error) => sendErrorPage(res, error));
 });
 
 // rendering add flower page
@@ -68,7 +68,7 @@ app.post("/inputform", (req, res) => {
   flowerStorage
     .insertFlower(req.body)
     .then((status) => sendStatusPage(res, status))
-    .catch((error) => sendErrorPage(res, error));
+    .catch((err) => sendErrorPage(res, err));
 });
 
 //update flower
